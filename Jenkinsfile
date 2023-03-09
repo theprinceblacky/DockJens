@@ -10,7 +10,7 @@ node{
        }
 	
        stage('Run image') {
-	  docker.image('anice/nginx').withRun(-p 86:80') { c ->
+	  docker.image('anice/nginx').withRun('-p 86:80') { c ->
 	  sh 'docker ps'
 	  sh 'curl localhost
 	  }
